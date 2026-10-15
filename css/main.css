@@ -1,0 +1,380 @@
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem;
+}
+
+#hovedlogo {
+    width: 200px;
+    height: auto;
+    padding-left: 5rem;
+    padding-top: 1rem;
+}
+
+#tjenester-logo {
+    width: 400px;
+    height: auto;
+    padding-left: 5rem;
+    padding-top: 1rem;
+}
+
+#hovedbakgrunn{
+    position: relative;
+    width: 100%;
+    height: 900px;
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+}
+
+#h1-text-over-image{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 3rem;
+    font-weight: bold;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    z-index: 10;
+}
+#p-text-over-image{
+    position: absolute;
+    top: 53%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    z-index: 10;
+}
+
+#a-over-image {
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+    background-color: #8CA0AD;
+    color: white;
+    padding: 0.8rem 1.5rem;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+    margin: 0;
+    padding: 0;
+    padding-right: 5rem; 
+}
+
+nav a {
+    text-decoration: none;
+    color: #000000;
+    font-weight: bold;
+    font-size: 1.2rem;
+    transition: color 0.5s ease;
+
+}
+nav a:hover {
+    color: #8CA0AD;
+}
+
+button {
+    background-color: #8CA0AD;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 0;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #6b7c85;
+}
+
+input[type="text"] {
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 0;
+    font-size: 1rem;
+}
+
+#about-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 1rem;
+    padding: 4rem 2rem;
+    max-width: 60%;
+    margin: 0 auto;
+    text-align: left;
+}
+
+#about-section img {
+    width: 50%;
+    height: auto;
+    display: block;
+}
+
+#about-section p {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+#services-section {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 2rem;
+    padding: 5rem 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+#services-section h2 {
+    color: #8CA0AD;
+    margin-right: 2rem;
+    margin-bottom: 2rem;
+    font-size: 2.3rem;
+}
+
+#services-section p {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+#benefits-section {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 2rem;
+    padding: 5rem 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+#benefits-section h2 {
+    color: #8CA0AD;
+    font-size: 2.3rem;
+    margin-bottom: 1rem;
+}
+
+#benefits-section p {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+#benefits-section ul {
+    list-style-type: disc;
+    font-size: 1.1rem;
+}
+
+#summary {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    padding: 5rem;
+    max-width: 1200px;
+}
+
+#summary article h2 {
+    color: #8CA0AD;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+#tjenester-art-1 {
+    display: flex;
+    flex-direction: row;
+}
+
+#tjenester-sec-1 {
+    padding: 2rem;
+}
+
+#tjenester-art-2 {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+#tjenester-sec-2 {
+    padding: 2rem;
+}
+
+#tjenester-art-3 {
+    display: flex;
+    flex-direction: row;
+}
+
+#tjenester-sec-3 {
+    padding: 2rem;
+}
+
+#tjenester-kontakt {
+    text-align: center;
+    padding: 2rem;
+}
+
+#kontakt-section {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 4rem 2rem;
+    text-align: left;
+}
+
+#kontakt-section p {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    background-color: #F8F4EA;
+}
+
+#form-section {
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+}
+
+#q-1, #q-2, #q-3, #q-4, #q-5 {
+    margin: 0 auto;
+    padding: 2rem 2rem;
+    text-align: left;
+}
+
+#q-1 p, #q-2 p, #q-3 p, #q-4 p, #q-5 p {
+    font-size: 1.2rem;
+}
+
+#q-1 ul, #q-2 ul, #q-3 ul, #q-4 ul, #q-5 ul {
+    font-size: 1.2rem;
+}
+
+
+form {
+    background: #F8F4EA;
+    display: grid;
+    gap: 16px;
+    text-align: left;
+    width: 40%;
+}
+
+
+label {
+    font-weight: 500;
+    margin-bottom: 4px;
+}
+
+input, select {
+    padding: 10px 12px;
+    font-size: 1rem;
+    border: 1px solid #d1d1d1;
+    border-radius: 6px;
+    transition: border 0.2s, box-shadow 0.2s;
+}
+
+input:focus, select:focus {
+    border-color: #0073ff;
+    box-shadow: 0 0 4px rgba(0,115,255,0.3);
+    outline: none;
+}
+
+button {
+    background: #0073ff;
+    border: none;
+    color: white;
+    padding: 12px;
+    font-size: 1.1rem;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: 0.25s;
+}
+
+button:hover {
+    background: #005ed1;
+}
+
+main {
+    flex-grow: 1;
+}
+
+footer {
+    background-color: #F3F4F6;
+}
+
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    text-align: center;
+    padding: 1rem;
+  }
+
+  #hovedlogo {
+    width: 140px;
+    padding: 0;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 0;
+  }
+
+  #h1-text-over-image {
+    font-size: 1.8rem;
+    top: 35%;
+    width: 90%;
+  }
+
+  #a-over-image {
+    font-size: 1rem;
+    padding: 0.6rem 1.2rem;
+    top: 70%;
+  }
+
+  #about-section {
+    grid-template-columns: 1fr;
+    max-width: 90%;
+    text-align: center;
+  }
+
+  #about-section img {
+    width: 60%;
+    margin: 0 auto;
+  }
+
+  #services-section,
+  #benefits-section,
+  #summary {
+    padding: 2rem 1rem;
+  }
+
+  form {
+    width: 100%;
+  }
+
+  #tjenester-art-1,
+  #tjenester-art-2,
+  #tjenester-art-3 {
+    flex-direction: column !important;
+  }
+}
