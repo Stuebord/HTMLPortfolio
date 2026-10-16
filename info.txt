@@ -1,7 +1,0 @@
-Her er OddGPTs fargeprofil vi definerte ut fra logoen din:
-
-    OddGPT Blå – #8CA0AD (dempet blå, primærfarge for overskrifter, knapper, grafiske elementer)
-    OddGPT Beige/Gull – #DDB878 (varm jordtone, aksentfarge for lenker, ikoner, viktige punkter)
-    OddGPT Lys Krem – #F8F4EA (standard bakgrunn)
-    Mørk Grå – #2B2B2B (primær tekstfarge)
-    Hvit – #FFFFFF (bakgrunn eller negativ logo)

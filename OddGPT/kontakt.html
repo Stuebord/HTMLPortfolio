@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/main.css">
+    <title>OddGPT</title>
+</head>
+<body>
+    <header>
+        <a href="index.html"><img id="hovedlogo" src="./images/mainLogoFlavor.png" alt="Logo redirigerer tilbake til hovedsiden"></a>
+        <nav>
+            <ul>
+                <li><a href="tjenester.html">Tjenester</a></li>
+                <li><a href="kontakt.html">kontakt</a></li>
+                <li><a href="about.html">FAQ</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="kontakt-section">
+            <h1>Vil du diskutere en byggesak eller teste OddGPT?</h1>
+            <p>Fyll ut skjemaet under - eller kontakt meg direkte. Jeg svarer som regel samme dag.</p>
+            <p>Du kan også avtale en gratis vurdering av byggesak - eller få tilgang til en demo av OddGPT.</p>
+        </section>
+        <section id="form-section">
+            <form id="registerForm">
+            <label>Navn:</label>
+            <input name="name" required />
+
+            <label>E-post:</label>
+            <input name="email" type="email" required />
+
+            <label>Telefonnummer:</label>
+            <input name="phone" type="tel" required />
+
+            <label>Organisasjonsnummer (valgfritt):</label>
+            <input name="orgnr" />
+
+            <label>Fylke:</label>
+            <select name="county" required>
+                <option value="">Velg fylke</option>
+                <option value="Oslo">Oslo</option>
+                <option value="Viken">Viken</option>
+                <option value="Innlandet">Innlandet</option>
+                <option value="Vestfold og Telemark">Vestfold og Telemark</option>
+                <option value="Agder">Agder</option>
+                <option value="Rogaland">Rogaland</option>
+                <option value="Vestland">Vestland</option>
+                <option value="Møre og Romsdal">Møre og Romsdal</option>
+                <option value="Trøndelag">Trøndelag</option>
+                <option value="Nordland">Nordland</option>
+                <option value="Troms og Finnmark">Troms og Finnmark</option>
+            </select>
+
+            <button type="submit">Send inn</button>
+            </form>
+
+            <script>
+            document.getElementById("registerForm").addEventListener("submit", async (e) => {
+            e.preventDefault();
+            const form = e.target;
+
+            const data = {
+                name: form.name.value,
+                email: form.email.value,
+                phone: form.phone.value,
+                orgnr: form.orgnr.value,
+                county: form.county.value,
+            };
+
+            await fetch("https://script.google.com/macros/s/AKfycbzUMMTXrrgVTmtqVN0D1bQA530HmNxeXZ4ZM6aUHAAe9DRqduznQ0MwtqO4oeFWP720zg/exec", {
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify(data),
+            });
+
+            alert("Takk! Informasjonen er sendt.");
+            form.reset();
+            });
+            </script>
+        </section>
+    </main>
+</body>
+</html>
